@@ -40,7 +40,7 @@ sample = {
             "sales": [15000, 18000, 19000]
         }
     ],
-    "reviews": [
+    "reviews": [ #Copy pasted from document, sample data for reviews
         {
             "reviewId": "1",
             "reviewAuthor": "Jane Developer",
