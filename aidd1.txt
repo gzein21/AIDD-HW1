@@ -1,0 +1,123 @@
+ Scenario
+NextChapter is a startup launching a new platform for book reviews. They want to store structured information about books and reviews.
+Book Data
+•	bookId
+•	title
+•	aiMetric (0–100, a measure of how well the book is recommended by AI-powered recommendation engines)
+•	releaseYear
+•	author (single string)
+•	genres (list of genres)
+•	publisher (embedded: publisherName and location)
+•	pages
+•	sales (list of yearly sales figures, most recent last)
+Review Data
+•	reviewId
+•	reviewAuthor
+•	reviewDate
+•	reviewText
+•	bookId
+________________________________________
+Assignment 1
+Part 1
+Use the sample data at the end of this document to create a list of books and reviews in a text file.
+a.	Create a function to load data
+b.	Create a function to save the data
+
+Note: The save and load can automatically happen at your choosing of event (i.e. after creating a new book or review) or you can add the ability to a menu system available to the user of your program.
+
+c.	Create a function that prompts a user to create a new
+a.	Book
+b.	Review
+Part 2
+Write Python code to create a Menu system for users that includes the ability to …
+1.	Load Data
+2.	Save Data
+3.	Add Book
+4.	Add Review
+5.	Print the titles of all books released in a user specified year
+6.	Print the titles of all books with an AI Metric lower than a user specified value.
+7.	Print all books that have at least 1 review (skip books with 0 reviews)
+________________________________________
+ 
+🤖 AI-Enabled Programming Component
+Since this course reflects the AI-first era of software development (2025), you must:
+1.	Log your prompts
+o	Whenever you use Copilot, ChatGPT, or any AI tool to generate/refactor code, add the prompt (or summary) into a file called .prompt/dev_notes.md.
+o	Example:
+ 	# AI Prompt Log
+Prompt: Write Python code to filter books with aiMetric < 50.
+AI Suggestion: ...
+My Edits: I changed X because Y.
+2.	Critique AI Output
+o	In comments inside your Python code, explain at least once where AI’s suggestion was helpful and once where it was wrong, incomplete, or needed adjustment.
+3.	Demonstrate Understanding
+o	Even if AI writes the loop, you must annotate what it does. Your assignment will be graded partly on your explanations and documentation, not only correctness.
+________________________________________
+ 
+Sample Data
+Books
+{
+ "bookId": "1",
+ "title": "The Quantum Garden",
+ "aiMetric": "88",
+ "releaseYear": "2023",
+ "author": "Alice Johnson",
+ "genres": ["Science Fiction", "Thriller"],
+ "publisher": {
+   "publisherName": "Bright Future Press",
+   "location": "USA"
+ },
+ "pages": 420,
+ "sales": [50000, 60000, 72000]
+}
+{
+ "bookId": "2",
+ "title": "The Forgotten Code",
+ "aiMetric": "42",
+ "releaseYear": "2024",
+ "author": "Devon Chen",
+ "genres": ["Mystery", "Techno-thriller"],
+ "publisher": {
+   "publisherName": "Redwood House",
+   "location": "UK"
+ },
+ "pages": 310,
+ "sales": [20000, 25000, 30000]
+}
+{
+ "bookId": "3",
+ "title": "Dreaming in Algorithms",
+ "aiMetric": "65",
+ "releaseYear": "2023",
+ "author": "Sofia Martinez",
+ "genres": ["Non-fiction", "Technology"],
+ "publisher": {
+   "publisherName": "AI4Books",
+   "location": "Canada"
+ },
+ "pages": 280,
+ "sales": [15000, 18000, 19000]
+}
+Reviews
+{
+ "reviewId": "1",
+ "reviewAuthor": "Jane Developer",
+ "reviewDate": "2024-05-12",
+ "reviewText": "Fascinating mix of science and thriller, but the AI-generated dialogue felt awkward.",
+ "bookId": "1"
+}
+{
+ "reviewId": "2",
+ "reviewAuthor": "Mark Tester",
+ "reviewDate": "2024-06-07",
+ "reviewText": "The Forgotten Code was suspenseful but leaned too much on technical jargon.",
+ "bookId": "2"
+}
+{
+ "reviewId": "3",
+ "reviewAuthor": "Emily Engineer",
+ "reviewDate": "2024-07-01",
+ "reviewText": "Dreaming in Algorithms gave me new insights into how AI impacts creativity.",
+ "bookId": "3"
+}
+
